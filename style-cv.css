@@ -1,3 +1,39 @@
+
+.profilPic {
+width: 210px; 
+height: 320px;
+position: relative;
+}
+
+.font {
+  position: relative;
+}
+
+.subFont {
+  position: relative;
+  color: #000000;  
+}
+.bgImage {
+  background-size: cover;
+  position: relative;
+  max-width: auto;
+  height: 100%; 
+  opacity: 5;
+}
+
+.bgImage::before {    
+  content: "";
+  background-image: url('./pics/bg3.jpg');
+  background-size: 600px;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.25;
+}
 .sidenav1 {
     height: 100%;
     width: 400px;
@@ -6,4 +42,10 @@
     top: 0;
     left: 0;
     overflow-x: hidden;
+  }
+
+
+  .icon {
+    width:1em;
+    height:1em;
   }
